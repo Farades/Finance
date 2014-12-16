@@ -10,15 +10,11 @@ import java.awt.event.ActionListener;
 /**
  * Created by TesS on 16.12.2014.
  */
-public class Register extends JPanel {
-    private JFrame frame;
-    private Manager manager;
+public class Register extends WindowPanel {
 
     public Register(Manager manager, JFrame frame) {
-        this.frame = frame;
-        this.manager = manager;
+        super(manager, frame);
 
-        setLayout(null);
         JLabel welcomeLabel = new JLabel("Регистрация");
         welcomeLabel.setBounds(120, 30, 200, 30);
         add(welcomeLabel);

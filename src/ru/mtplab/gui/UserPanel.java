@@ -7,16 +7,12 @@ import javax.swing.*;
 /**
  * Created by TesS on 16.12.2014.
  */
-public class UserPanel extends JPanel {
-    private JFrame frame;
-    private Manager manager;
+public class UserPanel extends WindowPanel {
 
     public UserPanel(Manager manager, JFrame frame) {
-        this.frame = frame;
-        this.manager = manager;
-        setLayout(null);
+        super(manager, frame);
         JLabel welcomeLabel = new JLabel("Панель пользователя");
-        welcomeLabel.setBounds(120, 30, 200, 30);
+        welcomeLabel.setBounds(100, 30, 200, 30);
         add(welcomeLabel);
     }
 }
