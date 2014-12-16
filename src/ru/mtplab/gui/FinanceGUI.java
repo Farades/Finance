@@ -30,56 +30,28 @@ public class FinanceGUI extends JFrame {
     public void setWelcomeWindow() {
         background.removeAll();
         background.setVisible(false);
-        background = new JPanel();
-        background.setLayout(null);
-
-        JLabel welcomeLabel = new JLabel("Добро пожаловать в Finance!");
-        welcomeLabel.setBounds(60, 30, 200, 30);
-        JLabel authLabel = new JLabel("Вы можете войти в свой аккаунт:");
-        authLabel.setBounds(50, 120, 200, 30);
-        background.add(welcomeLabel);
-        background.add(authLabel);
-
-        addUserInputFields();
-
+        background = new Welcome();
         getContentPane().add(background);
 
-    }
-
-    public void setRegisterWindow() {
-        background.removeAll();
-        background.setVisible(false);
-        background = new JPanel();
-    }
-
-    public void addUserInputFields() {
-        JTextField userNameInput = new JTextField(20);
-        userNameInput.setBounds(100, 170, 150, 30);
-        JTextField passwordInput = new JTextField(20);
-        passwordInput.setBounds(100, 220, 150, 30);
-
-        JLabel loginLabel = new JLabel("Логин:");
-        loginLabel.setBounds(50, 170, 200, 30);
-        JLabel passwordLabel = new JLabel("Пароль:");
-        passwordLabel.setBounds(37, 220, 200, 30);
-
-        JButton enter = new JButton("Войти");
-        enter.setBounds(80, 270, 130, 30);
-
-        JButton register = new JButton("Регистрация");
-        register.setBounds(80, 320, 130, 30);
-        register.addActionListener(new ActionListener() {
+        /*
+        Жесткий костыль (или нет?). Игорь, вопрос к Вам... :)\
+        По идее обработчик нажатия кнопки должен быть в классе Welcome.
+        Но тогда из класса Register нельзя вызвать метод getContentPane().add(background);
+        Можно конечно в конструкторе Welcome передать ссылку на JFrame, но это совсем уже не торт.
+         */
+        Welcome welcome = (Welcome) background;
+        welcome.register.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 setRegisterWindow();
             }
         });
+    }
 
-        background.add(userNameInput);
-        background.add(passwordInput);
-        background.add(loginLabel);
-        background.add(passwordLabel);
-        background.add(enter);
-        background.add(register);
+    public void setRegisterWindow() {
+        background.removeAll();
+        background.setVisible(false);
+        background = new Register(manager);
+        getContentPane().add(background);
     }
 }
