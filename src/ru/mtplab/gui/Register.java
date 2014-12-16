@@ -3,14 +3,18 @@ package ru.mtplab.gui;
 import ru.mtplab.logic.Manager;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * Created by TesS on 16.12.2014.
  */
 public class Register extends JPanel {
+    private JFrame frame;
     private Manager manager;
 
-    public Register(Manager manager) {
+    public Register(Manager manager, JFrame frame) {
+        this.frame = frame;
         this.manager = manager;
 
         setLayout(null);
@@ -36,6 +40,12 @@ public class Register extends JPanel {
 
         JButton back = new JButton("Назад");
         back.setBounds(80, 270, 130, 30);
+        back.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setWelcomeWindow();
+            }
+        });
 
         add(userNameInput);
         add(passwordInput);
@@ -43,5 +53,12 @@ public class Register extends JPanel {
         add(passwordLabel);
         add(enter);
         add(back);
+    }
+
+    private void setWelcomeWindow() {
+        removeAll();
+        setVisible(false);
+        frame.getContentPane().removeAll();
+        frame.getContentPane().add(new Welcome(manager, frame));
     }
 }

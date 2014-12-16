@@ -1,5 +1,7 @@
 package ru.mtplab.gui;
 
+import ru.mtplab.logic.Manager;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -8,10 +10,13 @@ import java.awt.event.ActionListener;
  * Created by TesS on 16.12.2014.
  */
 public class Welcome extends JPanel{
+    private JFrame frame;
+    private Manager manager;
 
-    public JButton register;
+    public Welcome(Manager manager, JFrame frame) {
+        this.frame = frame;
+        this.manager = manager;
 
-    public Welcome() {
         setLayout(null);
 
         JLabel welcomeLabel = new JLabel("Добро пожаловать в Finance!");
@@ -38,8 +43,14 @@ public class Welcome extends JPanel{
         JButton enter = new JButton("Войти");
         enter.setBounds(80, 270, 130, 30);
 
-        register = new JButton("Регистрация");
+        JButton register = new JButton("Регистрация");
         register.setBounds(80, 320, 130, 30);
+        register.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setRegisterWindow();
+            }
+        });
 
         add(userNameInput);
         add(passwordInput);
@@ -47,5 +58,12 @@ public class Welcome extends JPanel{
         add(passwordLabel);
         add(enter);
         add(register);
+    }
+
+    public void setRegisterWindow() {
+        removeAll();
+        setVisible(false);
+        frame.getContentPane().removeAll();
+        frame.getContentPane().add(new Register(manager, frame));
     }
 }
