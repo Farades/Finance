@@ -1,6 +1,7 @@
 package ru.mtplab.gui;
 
 import ru.mtplab.logic.Manager;
+import ru.mtplab.logic.User;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

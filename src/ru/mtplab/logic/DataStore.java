@@ -11,7 +11,7 @@ public interface DataStore {
 //    HashSet<Account> getAccounts(User owner);
 //    HashSet<Record> getRecords(Account account);
 
-    void addUser(User user);
+    boolean addUser(User user);
     void addAccount(User user, Account account);
     void addRecord(Account account, Record record);
 

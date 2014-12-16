@@ -1,6 +1,7 @@
 package ru.mtplab.gui;
 
 import ru.mtplab.logic.Manager;
+import ru.mtplab.logic.User;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -9,7 +10,7 @@ import java.awt.event.ActionListener;
 /**
  * Created by TesS on 16.12.2014.
  */
-public class Welcome extends JPanel{
+public class Welcome extends JPanel {
     private JFrame frame;
     private Manager manager;
 
@@ -30,9 +31,9 @@ public class Welcome extends JPanel{
     }
 
     private void addUserInputFields() {
-        JTextField userNameInput = new JTextField(20);
+        final JTextField userNameInput = new JTextField(20);
         userNameInput.setBounds(100, 170, 150, 30);
-        JTextField passwordInput = new JTextField(20);
+        final JPasswordField passwordInput = new JPasswordField(20);
         passwordInput.setBounds(100, 220, 150, 30);
 
         JLabel loginLabel = new JLabel("Логин:");
@@ -42,6 +43,19 @@ public class Welcome extends JPanel{
 
         JButton enter = new JButton("Войти");
         enter.setBounds(80, 270, 130, 30);
+        enter.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                User user = new User(userNameInput.getText(), passwordInput.getText());
+                if (manager.checkUser(user)) {
+                    System.out.println("Authentication is successful");
+                    manager.currentUser = user;
+                    setUserPanel();
+                } else {
+                    System.out.println("login/password incorrected");
+                }
+            }
+        });
 
         JButton register = new JButton("Регистрация");
         register.setBounds(80, 320, 130, 30);
@@ -65,5 +79,12 @@ public class Welcome extends JPanel{
         setVisible(false);
         frame.getContentPane().removeAll();
         frame.getContentPane().add(new Register(manager, frame));
+    }
+
+    public void setUserPanel() {
+        removeAll();
+        setVisible(false);
+        frame.getContentPane().removeAll();
+        frame.getContentPane().add(new UserPanel(manager, frame));
     }
 }
