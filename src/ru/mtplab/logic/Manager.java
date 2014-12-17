@@ -1,12 +1,13 @@
 package ru.mtplab.logic;
 
 import java.util.HashSet;
+import java.util.Set;
 
 /**
- * Created by TesS on 16.12.2014.
+ * Класс Manager - основной класс для управления данными и связи GUI с логикой (контроллер).
  */
 public class Manager implements DataStore {
-    private HashSet<User> users;
+    private Set<User> users;
     public User currentUser;
 
     public Manager() {
@@ -14,24 +15,28 @@ public class Manager implements DataStore {
     }
 
     //Добавляет пользователя, если такого уже не существует
+    @Override
     public boolean addUser(User user) {
-        if (!users.contains(user)) {
-            users.add(user);
+        if (users.add(user))
             return true;
-        } else {
+        else
             return false;
-        }
     }
 
+    @Override
     public void addAccount(User user, Account account) {
 
     }
 
+    @Override
     public void addRecord(Account account, Record record) {
 
     }
 
     public boolean checkUser(User user) {
-        return users.contains(user);
+        if (users.contains(user)) {
+            
+        }
+        return false;
     }
 }

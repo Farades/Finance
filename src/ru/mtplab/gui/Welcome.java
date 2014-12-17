@@ -17,11 +17,12 @@ public class Welcome extends WindowPanel {
     public Welcome(Manager manager, JFrame frame) {
         super(manager, frame);
 
-        Font font = new Font("Arial", Font.BOLD, 14);
         JLabel welcomeLabel = new JLabel("Добро пожаловать в Finance!");
-        welcomeLabel.setBounds(60, 30, 200, 30);
-        JLabel authLabel = new JLabel("Вы можете войти в свой аккаунт:");
+        welcomeLabel.setFont(new Font("Arial", Font.BOLD, 14));
+        welcomeLabel.setBounds(40, 30, 250, 30);
+        authLabel = new JLabel("Вы можете войти в свой аккаунт:");
         authLabel.setBounds(50, 120, 200, 30);
+        authLabel.setFont(new Font("Arial", Font.PLAIN, 12));
         add(welcomeLabel);
         add(authLabel);
 
@@ -50,6 +51,9 @@ public class Welcome extends WindowPanel {
                     manager.currentUser = user;
                     setUserPanel();
                 } else {
+                    authLabel.setText("Такого аккаунта не существует");
+                    authLabel.setForeground(Color.red);
+                    authLabel.setFont(new Font("Arial", Font.BOLD, 12));
                     System.out.println("login/password incorrected");
                 }
             }
