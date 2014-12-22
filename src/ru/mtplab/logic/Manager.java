@@ -20,7 +20,7 @@ public class Manager implements DataStore {
         db = DbHelper.getInstance();
     }
 
-    //Добавляет пользователя в БД, если такого уже не существует
+//    Добавляет пользователя в БД, если такого уже не существует
     @Override
     public boolean addUser(User user) {
         logger.info("Adding new user: {}", user);
@@ -40,9 +40,21 @@ public class Manager implements DataStore {
         return true;
     }
 
+//    Добавление счета в БД пользователю user
     @Override
     public void addAccount(User user, Account account) {
-
+        PreparedStatement statement = null;
+        try {
+            statement = db.getConn().prepareStatement("INSERT INTO ACCOUNTS (DESCR, USER_NAME) VALUES(?, ?);");
+            statement.setString(1, account.getDescription());
+            statement.setString(2, user.getUsername());
+            int result = statement.executeUpdate();
+            logger.info("Add account {} to User {} - {}", account, user, result);
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        } finally {
+            DbHelper.closeResource(statement);
+        }
     }
 
     @Override
@@ -50,12 +62,14 @@ public class Manager implements DataStore {
 
     }
 
+//    Проверка пользователя
+//    метод возвращает true, если пользователь существует в БД
     public boolean checkUser(User user) {
         logger.info("Checking user: {}", user);
         PreparedStatement statement = null;
         ResultSet rs = null;
         try {
-            statement = db.getConn().prepareStatement("SELECT * FROM USERS WHERE LOGIN=?");
+            statement = db.getConn().prepareStatement("SELECT * FROM USERS WHERE LOGIN=?;");
             statement.setString(1, user.getUsername());
             rs = statement.executeQuery();
             while (rs.next()) {

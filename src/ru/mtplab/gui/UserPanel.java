@@ -12,7 +12,18 @@ public class UserPanel extends WindowPanel {
     public UserPanel(Manager manager, JFrame frame) {
         super(manager, frame);
         JLabel welcomeLabel = new JLabel("Панель пользователя");
-        welcomeLabel.setBounds(100, 30, 200, 30);
+        JLabel accountsLabel = new JLabel("Список счетов:");
+        String[] columnNames = {
+                "Описание",
+                "Баланс"
+        };
+        JTable table = new JTable(manager.currentUser.getAccountsAsStrings(), columnNames);
+        JScrollPane scrollPane = new JScrollPane(table);
+        scrollPane.setBounds(10, 90, 280, 200);
+        welcomeLabel.setBounds(85, 30, 200, 30);
+        accountsLabel.setBounds(100, 60, 200, 30);
         add(welcomeLabel);
+        add(accountsLabel);
+        add(scrollPane);
     }
 }
