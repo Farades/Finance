@@ -6,11 +6,15 @@ import ru.mtplab.logic.User;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Created by TesS on 16.12.2014.
  */
 public class Register extends WindowPanel {
+
+    private static Logger logger = LoggerFactory.getLogger(Manager.class);
 
     public Register(Manager manager, JFrame frame) {
         super(manager, frame);
@@ -38,10 +42,7 @@ public class Register extends WindowPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 User user = new User(userNameInput.getText(), passwordInput.getText());
-                if (manager.addUser(user))
-                    System.out.println("User " + user.getUsername() + " registered.");
-                else
-                    System.out.println("User registering fail.");
+                manager.addUser(user);
                 setWelcomeWindow();
             }
         });

@@ -47,14 +47,13 @@ public class Welcome extends WindowPanel {
             public void actionPerformed(ActionEvent e) {
                 User user = new User(userNameInput.getText(), passwordInput.getText());
                 if (manager.checkUser(user)) {
-                    System.out.println("Authentication is successful");
                     manager.currentUser = user;
+                    manager.currentUser.setAccountsFromDB();
                     setUserPanel();
                 } else {
                     authLabel.setText("Такого аккаунта не существует");
                     authLabel.setForeground(Color.red);
                     authLabel.setFont(new Font("Arial", Font.BOLD, 12));
-                    System.out.println("login/password incorrected");
                 }
             }
         });

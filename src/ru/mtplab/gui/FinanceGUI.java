@@ -1,11 +1,8 @@
 package ru.mtplab.gui;
 
 import ru.mtplab.logic.Manager;
-import ru.mtplab.logic.User;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 /**
  * Created by TesS on 16.12.2014.
