@@ -54,7 +54,7 @@ public class Welcome extends WindowPanel {
                     authLabel.setText("Такого аккаунта не существует");
                     authLabel.setForeground(Color.red);
                     authLabel.setFont(new Font("Arial", Font.BOLD, 12));
-                    System.out.println("login/password incorrected");
+                    System.out.println("login/password incorrect");
                 }
             }
         });
