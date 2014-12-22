@@ -1,38 +1,25 @@
 package ru.mtplab.logic;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.ArrayList;
 
 /**
  * Created by TesS on 16.12.2014.
  */
 public class User {
+
+    private DbHelper db;
     private String username;
     private String password;
     private ArrayList<Account> accounts; // Список счетов
+    private static Logger logger = LoggerFactory.getLogger(Manager.class);
 
     public User(String username, String password) {
         this.username = username;
         this.password = password;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        User user = (User) o;
-
-        //if (password != null ? !password.equals(user.password) : user.password != null) return false;
-        if (username != null ? !username.equals(user.username) : user.username != null) return false;
-        System.out.println("Equals");
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        System.out.println("Hash code");
-        int result = username != null ? username.hashCode() : 0;
-        return result;
+        db = DbHelper.getInstance();
     }
 
     public String getUsername() {
@@ -41,5 +28,9 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    public void setAccountsFromDB() {
+        
     }
 }

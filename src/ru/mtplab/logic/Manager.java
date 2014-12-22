@@ -1,7 +1,9 @@
 package ru.mtplab.logic;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 import org.slf4j.Logger;
@@ -12,15 +14,13 @@ import org.slf4j.LoggerFactory;
 public class Manager implements DataStore {
     private static Logger logger = LoggerFactory.getLogger(Manager.class);
     private DbHelper db;
-    private Set<User> users;
     public User currentUser;
 
     public Manager() {
-        users = new HashSet<User>();
         db = DbHelper.getInstance();
     }
 
-    //Добавляет пользователя, если такого уже не существует
+    //Добавляет пользователя в БД, если такого уже не существует
     @Override
     public boolean addUser(User user) {
         logger.info("Adding new user: {}", user);
@@ -51,9 +51,45 @@ public class Manager implements DataStore {
     }
 
     public boolean checkUser(User user) {
-        if (users.contains(user)) {
-            
+        logger.info("Checking user: {}", user);
+        PreparedStatement statement = null;
+        ResultSet rs = null;
+        try {
+            statement = db.getConn().prepareStatement("SELECT * FROM USERS WHERE LOGIN=?");
+            statement.setString(1, user.getUsername());
+            rs = statement.executeQuery();
+            while (rs.next()) {
+                String userName = rs.getString(2);
+                String password = rs.getString(3);
+                if ( userName.equals(user.getUsername()) && password.equals(user.getPassword()) ) {
+                    logger.info("Login Successful");
+                    return true;
+                } else {
+                    logger.info("Wrong Username or Password");
+                    return false;
+                }
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        } finally {
+            db.closeResource(rs);
+            db.closeResource(statement);
         }
+        logger.info("Wrong Username or Password");
         return false;
+    }
+
+//    Валидация пользователя
+//    метод возвращает ArrayList, элементами которого являются текстовые описания ошибок
+//    если валидация успешна, то ArrayList вернется пустым
+    public ArrayList<String> validateUser(User user) {
+        logger.info("Validate user {}", user);
+        ArrayList<String> res = new ArrayList<String>();
+        if ( user.getPassword().length() < 5 || user.getPassword().length() > 20) {
+            res.add("Некорректная длина пароля");
+        } else if ( user.getUsername().length() < 5 || user.getUsername().length() > 20) {
+            res.add("Некорректная длина логина");
+        }
+        return res;
     }
 }
