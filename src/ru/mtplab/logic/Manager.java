@@ -35,7 +35,7 @@ public class Manager implements DataStore {
 
     public boolean checkUser(User user) {
         if (users.contains(user)) {
-            
+
         }
         return false;
     }
