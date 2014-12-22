@@ -48,6 +48,7 @@ public class Welcome extends WindowPanel {
                 User user = new User(userNameInput.getText(), passwordInput.getText());
                 if (manager.checkUser(user)) {
                     manager.currentUser = user;
+                    manager.currentUser.setAccountsFromDB();
                     setUserPanel();
                 } else {
                     authLabel.setText("Такого аккаунта не существует");

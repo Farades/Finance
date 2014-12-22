@@ -3,7 +3,11 @@ package ru.mtplab.logic;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by TesS on 16.12.2014.
@@ -13,7 +17,7 @@ public class User {
     private DbHelper db;
     private String username;
     private String password;
-    private ArrayList<Account> accounts; // Список счетов
+    public Set<Account> accounts; // Список счетов
     private static Logger logger = LoggerFactory.getLogger(Manager.class);
 
     public User(String username, String password) {
@@ -30,7 +34,30 @@ public class User {
         return password;
     }
 
+    @Override
+    public String toString() {
+        return this.username;
+    }
+
     public void setAccountsFromDB() {
-        
+        accounts = new HashSet<Account>();
+        PreparedStatement statement = null;
+        ResultSet rs = null;
+        try {
+            statement = db.getConn().prepareStatement("SELECT * FROM ACCOUNTS WHERE USER_NAME=?");
+            statement.setString(1, username);
+            rs = statement.executeQuery();
+            while (rs.next()) {
+                Account account = new Account();
+                account.setDescription(rs.getString(rs.findColumn("DESCR")));
+                accounts.add(account);
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        } finally {
+            DbHelper.closeResource(rs);
+            DbHelper.closeResource(statement);
+        }
+        logger.info("User: {} -> Accounts: {}", this, accounts);
     }
 }
