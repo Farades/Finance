@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb5834c0-ab90-4fcd-8db3-4e74123af30d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/mtplab/logic/Category.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/finance.sqlite" afterPath="$PROJECT_DIR$/finance.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/mtplab/gui/Account.java" afterPath="$PROJECT_DIR$/src/ru/mtplab/gui/Account.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/mtplab/logic/Account.java" afterPath="$PROJECT_DIR$/src/ru/mtplab/logic/Account.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/mtplab/logic/Category.java" afterPath="$PROJECT_DIR$/src/ru/mtplab/logic/Category.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/mtplab/logic/DataStore.java" afterPath="$PROJECT_DIR$/src/ru/mtplab/logic/DataStore.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/mtplab/logic/Manager.java" afterPath="$PROJECT_DIR$/src/ru/mtplab/logic/Manager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/mtplab/logic/Record.java" afterPath="$PROJECT_DIR$/src/ru/mtplab/logic/Record.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/mtplab/logic/User.java" afterPath="$PROJECT_DIR$/src/ru/mtplab/logic/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Finance/ru/mtplab/logic/create.sql" afterPath="$PROJECT_DIR$/out/production/Finance/ru/mtplab/logic/create.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/mtplab/logic/create.sql" afterPath="$PROJECT_DIR$/src/ru/mtplab/logic/create.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/mtplab/logic/insert.sql" afterPath="$PROJECT_DIR$/src/ru/mtplab/logic/insert.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Finance.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +36,8 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1377">
-              <caret line="50" column="117" selection-start-line="50" selection-start-column="117" selection-end-line="50" selection-end-column="117" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
+              <caret line="25" column="36" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,75 +45,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/Account.java">
+      <file leaf-file-name="UserPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/mtplab/gui/UserPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="452" max-vertical-offset="1394">
-              <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581">
+              <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1082#1083#0" expanded="true" />
-                <element signature="e#1110#1111#0" expanded="true" />
-                <element signature="e#1136#1137#0" expanded="true" />
-                <element signature="e#1166#1167#0" expanded="true" />
+                <element signature="e#1177#1186#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Account.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ru/mtplab/gui/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7671034" vertical-offset="0" max-vertical-offset="2108">
-              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1523#1680#0" expanded="true" />
-                <element signature="e#1679#1680#0" expanded="true" />
-                <element signature="e#2012#2032#0" expanded="true" />
-                <element signature="e#2139#2140#0" expanded="true" />
-                <element signature="e#2213#2214#0" expanded="true" />
-                <element signature="e#2287#2288#0" expanded="true" />
-                <element signature="e#2334#2335#0" expanded="true" />
-                <element signature="e#2393#2394#0" expanded="true" />
-                <element signature="e#2436#2437#0" expanded="true" />
-                <element signature="e#2475#2476#0" expanded="true" />
-                <element signature="e#2507#2508#0" expanded="true" />
-                <element signature="e#2804#2805#0" expanded="true" />
-                <element signature="e#2862#2863#0" expanded="true" />
-                <element signature="e#3300#3301#0" expanded="true" />
-                <element signature="e#3336#3337#0" expanded="true" />
-                <element signature="e#3413#3414#0" expanded="true" />
-                <element signature="e#3463#3464#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Record.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/Record.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
-                <element signature="e#819#820#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#899#900#0" expanded="true" />
-                <element signature="e#938#939#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Manager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/Manager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -125,11 +61,14 @@
       <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/Category.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="816">
+              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
               <folding>
-                <element signature="e#136#137#0" expanded="true" />
-                <element signature="e#166#167#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#1003#1004#0" expanded="true" />
+                <element signature="e#1035#1036#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,44 +77,87 @@
       <file leaf-file-name="create.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/create.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="561">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="insert.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/insert.sql">
+      <file leaf-file-name="Account.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ru/mtplab/gui/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-              <caret line="8" column="99" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="99" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewAccount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/mtplab/gui/NewAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
-              <caret line="59" column="48" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.45560408" vertical-offset="350" max-vertical-offset="1853">
+              <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#994#1151#0" expanded="true" />
-                <element signature="e#1150#1151#0" expanded="true" />
-                <element signature="e#1288#1443#0" expanded="true" />
-                <element signature="e#1442#1443#0" expanded="true" />
+                <element signature="e#2029#2049#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Register.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/mtplab/gui/Register.java">
+      <file leaf-file-name="Record.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/Record.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
-              <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="129" max-vertical-offset="884">
+              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#748#749#0" expanded="true" />
+                <element signature="e#787#788#0" expanded="true" />
+                <element signature="e#819#820#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
+                <element signature="e#890#891#0" expanded="true" />
+                <element signature="e#926#927#0" expanded="true" />
+                <element signature="e#972#973#0" expanded="true" />
+                <element signature="e#1011#1012#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Manager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/Manager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
+              <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1364#1365#0" expanded="true" />
+                <element signature="e#1411#1412#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataStore.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/DataStore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/DbHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1683">
+              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FinanceGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/mtplab/gui/FinanceGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,15 +179,15 @@
         <option value="$PROJECT_DIR$/src/ru/mtplab/logic/DbHelper.java" />
         <option value="$PROJECT_DIR$/src/ru/mtplab/gui/Register.java" />
         <option value="$PROJECT_DIR$/src/ru/mtplab/gui/Welcome.java" />
-        <option value="$PROJECT_DIR$/src/ru/mtplab/logic/DataStore.java" />
         <option value="$PROJECT_DIR$/src/ru/mtplab/gui/UserPanel.java" />
         <option value="$PROJECT_DIR$/src/ru/mtplab/gui/NewAccount.java" />
-        <option value="$PROJECT_DIR$/src/ru/mtplab/logic/Manager.java" />
-        <option value="$PROJECT_DIR$/src/ru/mtplab/logic/Category.java" />
         <option value="$PROJECT_DIR$/src/ru/mtplab/logic/User.java" />
         <option value="$PROJECT_DIR$/src/ru/mtplab/logic/create.sql" />
         <option value="$PROJECT_DIR$/src/ru/mtplab/logic/Account.java" />
         <option value="$PROJECT_DIR$/src/ru/mtplab/logic/insert.sql" />
+        <option value="$PROJECT_DIR$/src/ru/mtplab/logic/DataStore.java" />
+        <option value="$PROJECT_DIR$/src/ru/mtplab/logic/Manager.java" />
+        <option value="$PROJECT_DIR$/src/ru/mtplab/logic/Category.java" />
         <option value="$PROJECT_DIR$/src/ru/mtplab/logic/Record.java" />
         <option value="$PROJECT_DIR$/src/ru/mtplab/gui/Account.java" />
       </list>
@@ -628,6 +610,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="544">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -635,6 +620,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -673,12 +659,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1177#1186#0" expanded="true" />
-            <element signature="e#1364#1576#0" expanded="true" />
-            <element signature="e#1575#1576#0" expanded="true" />
-            <element signature="e#2325#2604#0" expanded="true" />
-            <element signature="e#2603#2604#0" expanded="true" />
-            <element signature="e#2644#2808#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -717,6 +697,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="595">
           <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -767,12 +750,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1177#1186#0" expanded="true" />
-            <element signature="e#1364#1576#0" expanded="true" />
-            <element signature="e#1575#1576#0" expanded="true" />
-            <element signature="e#2325#2604#0" expanded="true" />
-            <element signature="e#2603#2604#0" expanded="true" />
-            <element signature="e#2644#2808#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -817,8 +794,10 @@
             <element signature="e#787#788#0" expanded="true" />
             <element signature="e#819#820#0" expanded="true" />
             <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1011#1012#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -827,6 +806,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="595">
           <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -877,12 +859,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1177#1186#0" expanded="true" />
-            <element signature="e#1364#1576#0" expanded="true" />
-            <element signature="e#1575#1576#0" expanded="true" />
-            <element signature="e#2325#2604#0" expanded="true" />
-            <element signature="e#2603#2604#0" expanded="true" />
-            <element signature="e#2644#2808#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -927,8 +903,10 @@
             <element signature="e#787#788#0" expanded="true" />
             <element signature="e#819#820#0" expanded="true" />
             <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1011#1012#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -937,6 +915,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -944,41 +923,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/gui/FinanceGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/DataStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/DbHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1683">
-          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/gui/Welcome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1581">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -986,6 +931,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1394">
+          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/insert.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <caret line="8" column="109" selection-start-line="8" selection-start-column="109" selection-end-line="8" selection-end-column="109" />
           <folding />
         </state>
       </provider>
@@ -998,19 +965,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/gui/UserPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/gui/Welcome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1768">
-          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1581">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1177#1186#0" expanded="true" />
-            <element signature="e#1364#1576#0" expanded="true" />
-            <element signature="e#1575#1576#0" expanded="true" />
-            <element signature="e#2325#2604#0" expanded="true" />
-            <element signature="e#2603#2604#0" expanded="true" />
-            <element signature="e#2644#2808#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1031,34 +991,14 @@
           <caret line="59" column="48" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#994#1151#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-            <element signature="e#1288#1443#0" expanded="true" />
-            <element signature="e#1442#1443#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/Manager.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/gui/FinanceGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="561">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1377">
-          <caret line="50" column="117" selection-start-line="50" selection-start-column="117" selection-end-line="50" selection-end-column="117" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1067,76 +1007,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="816">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
           <folding>
-            <element signature="e#136#137#0" expanded="true" />
-            <element signature="e#166#167#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/insert.sql">
+    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/gui/UserPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="8" column="99" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="99" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581">
+          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1177#1186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/Account.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1394">
-          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
+          <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1364#1365#0" expanded="true" />
+            <element signature="e#1411#1412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/DataStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/DbHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1683">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/mtplab/logic/Record.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="129" max-vertical-offset="884">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#748#749#0" expanded="true" />
             <element signature="e#787#788#0" expanded="true" />
             <element signature="e#819#820#0" expanded="true" />
             <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1011#1012#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/mtplab/gui/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7671034" vertical-offset="0" max-vertical-offset="2108">
-          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.45560408" vertical-offset="350" max-vertical-offset="1853">
+          <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1523#1680#0" expanded="true" />
-            <element signature="e#1679#1680#0" expanded="true" />
-            <element signature="e#2012#2032#0" expanded="true" />
-            <element signature="e#2139#2140#0" expanded="true" />
-            <element signature="e#2213#2214#0" expanded="true" />
-            <element signature="e#2287#2288#0" expanded="true" />
-            <element signature="e#2334#2335#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2436#2437#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
-            <element signature="e#2507#2508#0" expanded="true" />
-            <element signature="e#2804#2805#0" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-            <element signature="e#3300#3301#0" expanded="true" />
-            <element signature="e#3336#3337#0" expanded="true" />
-            <element signature="e#3413#3414#0" expanded="true" />
-            <element signature="e#3463#3464#0" expanded="true" />
+            <element signature="e#2029#2049#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -35,6 +35,10 @@ public class Record {
         return this.amount;
     }
 
+    public Category getCategory() {
+        return this.category;
+    }
+
     @Override
     public String toString() {
         return this.description;

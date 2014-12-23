@@ -37,7 +37,7 @@ public class Account extends WindowPanel {
 
         TableModel model = new RecordsTableModel(account.getRecords());
         JTable recordsTable = new JTable(model);
-        add(BorderLayout.CENTER, recordsTable);
+        add(BorderLayout.CENTER, new JScrollPane(recordsTable));
 
         JButton back = new JButton("Назад");
         add(BorderLayout.SOUTH, back);
@@ -74,7 +74,7 @@ public class Account extends WindowPanel {
         }
 
         public int getColumnCount() {
-            return 2;
+            return 3;
         }
 
         public String getColumnName(int columnIndex) {
@@ -83,6 +83,8 @@ public class Account extends WindowPanel {
                     return "Описание";
                 case 1:
                     return "Сумма";
+                case 2:
+                    return "Категория";
             }
             return "";
         }
@@ -98,6 +100,8 @@ public class Account extends WindowPanel {
                     return record.getDescription();
                 case 1:
                     return String.valueOf(record.getAmount());
+                case 2:
+                    return record.getCategory().getName();
             }
             return "";
         }

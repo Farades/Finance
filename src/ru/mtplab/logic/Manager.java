@@ -38,26 +38,10 @@ public class Manager implements DataStore {
         return true;
     }
 
-//    Добавление счета в БД пользователю user
+//    TODO
     @Override
-    public void addAccount(User user, Account account) {
-        PreparedStatement statement = null;
-        try {
-            statement = db.getConn().prepareStatement("INSERT INTO ACCOUNTS (DESCR, USER_NAME) VALUES(?, ?);");
-            statement.setString(1, account.getDescription());
-            statement.setString(2, user.getUsername());
-            int result = statement.executeUpdate();
-            logger.info("Add account {} to User {} - {}", account, user, result);
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        } finally {
-            DbHelper.closeResource(statement);
-        }
-    }
-
-    @Override
-    public void addRecord(Account account, Record record) {
-
+    public User removeUser(String name) {
+        return new User("dwa", "dwada");
     }
 
 //    Проверка пользователя
@@ -91,6 +75,7 @@ public class Manager implements DataStore {
         return false;
     }
 
+//    TODO доделать валидацию пользователя и не только
 //    Валидация пользователя
 //    метод возвращает ArrayList, элементами которого являются текстовые описания ошибок
 //    если валидация успешна, то ArrayList вернется пустым
