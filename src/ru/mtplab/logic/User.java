@@ -48,8 +48,7 @@ public class User {
             statement.setString(1, username);
             rs = statement.executeQuery();
             while (rs.next()) {
-                Account account = new Account();
-                account.setDescription(rs.getString(rs.findColumn("DESCR")));
+                Account account = new Account(rs.getString(rs.findColumn("DESCR")), this);
                 accounts.add(account);
             }
         } catch (SQLException ex) {
@@ -61,14 +60,8 @@ public class User {
         logger.info("User: {} -> Accounts: {}", this, accounts);
     }
 
-    public String[][] getAccountsAsStrings() {
-        String[][] res = new String[accounts.size()][2];
-        int i = 0;
-        for (Account acc : accounts) {
-                res[i][0] = acc.getDescription();
-                res[i][1] = "0";
-        i++;
-        }
-        return res;
+    public Set<Account> getAccounts() {
+        return accounts;
     }
+
 }

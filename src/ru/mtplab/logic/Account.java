@@ -1,15 +1,22 @@
 package ru.mtplab.logic;
 
 import java.util.ArrayList;
+import java.util.Set;
 
 /**
  * Created by TesS on 16.12.2014.
  */
 public class Account {
 
+    private User owner;
     private String description;
     private float balance;
-    ArrayList<Record> records;
+    Set<Record> records;
+
+    public Account(String description, User owner) {
+        this.description = description;
+        this.owner = owner;
+    }
 
     public void setDescription(String description) {
         this.description = description;
@@ -17,6 +24,14 @@ public class Account {
 
     public String getDescription() {
         return this.description;
+    }
+
+    public Set<Record> getRecords() {
+        return records;
+    }
+
+    public void setRecordsFromDB() {
+
     }
 
     @Override

@@ -5,11 +5,11 @@ import java.util.HashSet;
 /**
  * Created by TesS on 16.12.2014.
  */
+//    Многие методы логичнее вынести в классы Account, User, Record
+//    Что и было сделано...
 public interface DataStore {
 //    User getUser(String name);
-//    HashSet<String> getUserNames();
-//    HashSet<Account> getAccounts(User owner);
-//    HashSet<Record> getRecords(Account account);
+//    Set<Record> getRecords(Account account);
 
     boolean addUser(User user);
     void addAccount(User user, Account account);
