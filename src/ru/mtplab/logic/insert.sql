@@ -5,3 +5,6 @@ insert OR REPLACE into accounts (descr, user_name) values ("Откаты", "fara
 insert OR REPLACE into accounts (descr, user_name) values ("Подработки", "farades");
 insert OR REPLACE into accounts (descr, user_name) values ("Фриланс", "farades");
 
+insert OR REPLACE into records (descr, amount, category_id, account_id) values ("Покупка машины", -100000, 4, 1);
+insert OR REPLACE into records (descr, amount, category_id, account_id) values ("Аванс",           35000,   2, 1);
+

@@ -48,7 +48,7 @@ public class User {
             statement.setString(1, username);
             rs = statement.executeQuery();
             while (rs.next()) {
-                Account account = new Account(rs.getString(rs.findColumn("DESCR")), this);
+                Account account = new Account(rs.getString(rs.findColumn("DESCR")), this, rs.getInt(rs.findColumn("ID")));
                 accounts.add(account);
             }
         } catch (SQLException ex) {
