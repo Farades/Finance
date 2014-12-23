@@ -60,6 +60,22 @@ public class User {
         logger.info("User: {} -> Accounts: {}", this, accounts);
     }
 
+    public void addAccount(Account account) {
+        logger.info("Adding Account: {} to User: {}", account, this);
+
+        PreparedStatement statement = null;
+        try {
+            statement = db.getConn().prepareStatement("INSERT INTO ACCOUNTS (DESCR, USER_NAME) VALUES (?, ?);");
+            statement.setString(1, account.getDescription());
+            statement.setString(2, account.getOwner().toString());
+            int result = statement.executeUpdate();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        } finally {
+            db.closeResource(statement);
+        }
+    }
+
     public Set<Account> getAccounts() {
         return accounts;
     }

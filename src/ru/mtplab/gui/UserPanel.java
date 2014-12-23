@@ -50,6 +50,10 @@ public class UserPanel extends WindowPanel {
         JButton logout = new JButton("Выход");
         JButton addButton = new JButton("Добавить счет");
         JButton delButton = new JButton("Удалить счет");
+        Font buttonFont = new Font("Arial", Font.PLAIN, 12);
+        logout.setFont(buttonFont);
+        addButton.setFont(buttonFont);
+        delButton.setFont(buttonFont);
         southPanel.add(logout);
         southPanel.add(addButton);
         southPanel.add(delButton);

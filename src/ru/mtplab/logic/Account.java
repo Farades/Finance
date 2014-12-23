@@ -10,6 +10,7 @@ public class Account {
 
     private User owner;
     private String description;
+    private int id;
     private float balance;
     Set<Record> records;
 
@@ -32,6 +33,10 @@ public class Account {
 
     public void setRecordsFromDB() {
 
+    }
+
+    public User getOwner() {
+        return owner;
     }
 
     @Override
